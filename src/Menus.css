@@ -1,0 +1,53 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 15px;
+    color: floralwhite;
+    text-decoration: none;
+}
+
+.menu li.active > a {
+    background-color: #333;
+    color: floralwhite;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    min-width: 200px;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+}
+
+.menu li:hover > .sub-menu {
+    display: block;
+}
+
+.sub-menu li {
+    display: block;
+}
+
+.sub-menu li a {
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.sub-menu li a:hover {
+    background-color: #f0f0f0;
+}
